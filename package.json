@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile:sass": "sass scss/main.scss css/style.css -w"
   },
   "devDependencies": {
     "vite": "^5.4.1"
