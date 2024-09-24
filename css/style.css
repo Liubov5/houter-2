@@ -23,4 +23,34 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #1c1c57;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #1c1c57;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  text-transform: capitalize;
+  color: #3d4563;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #878c96;
+  opacity: 0.75;
+}
+
 /*# sourceMappingURL=style.css.map */

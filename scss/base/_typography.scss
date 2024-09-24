@@ -1,1 +1,33 @@
+@use "../abstracts/variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: $navy-blue;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: $navy-blue
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 178%;
+    text-transform: capitalize;
+    color: $deep-blue;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: $gray-light;
+    opacity: .75;
+}
