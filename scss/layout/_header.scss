@@ -44,3 +44,15 @@
     background-color: $color-green-light;
     border: none;
 }
+
+.hero__title--transparent {
+    -webkit-text-stroke: 1px $color-navy-blue;
+    // text-stroke: 1px $color-navy-blue;
+    paint-order: stroke fill;
+    // text-shadow:
+    //     1px 1px 0 #000,
+    //     -1px -1px 0 #000,  
+    //     1px -1px 0 #000,
+    //     -1px 1px 0 #000;
+    color: transparent;
+}
