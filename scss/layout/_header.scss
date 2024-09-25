@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+
+.header {
+    background: url('/img/header-bg.png') ;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #1b1c57;
+}
+
+.header__logo-image {
+    padding-right: 12px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-link {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    padding: 8px 16px;
+    color: $white;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: $nav-links;
+}
+
+.header__sign-up-button {
+    color: $button-green-color;
+    background-color: $button-light-green-bg;
+    border: none;
+}
