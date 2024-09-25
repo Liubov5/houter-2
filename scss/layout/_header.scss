@@ -15,7 +15,7 @@
     font-weight: 700;
     font-size: 16px;
     text-transform: capitalize;
-    color: #1b1c57;
+    color: $color-navy-blue;
 }
 
 .header__logo-image {
@@ -40,7 +40,7 @@
 }
 
 .header__sign-up-button {
-    color: $button-green-color;
-    background-color: $button-light-green-bg;
+    color: $color-green-dark;
+    background-color: $color-green-light;
     border: none;
 }
