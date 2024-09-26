@@ -162,10 +162,17 @@ p {
   justify-content: space-between;
   gap: 20px;
 }
+.footer .footer__container .footer__description p {
+  margin: 16px 0 24px;
+}
 .footer .footer__container .footer__description .footer__description__images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+.footer .footer__container .footer__description .footer__description__images .instagram-icon {
+  position: relative;
+  top: 7px;
 }
 .footer .footer__container .footer__links {
   display: flex;

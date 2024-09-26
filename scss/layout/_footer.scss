@@ -5,6 +5,7 @@
     .footer__container{
         display: flex;
         justify-content: space-between;
+      
 
         .footer__description {
             display: flex;
@@ -20,10 +21,19 @@
                 gap: 20px;
             }
 
+            p {
+                margin: 16px 0 24px;
+            }
+
             .footer__description__images {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 24px;
+
+                .instagram-icon {
+                    position: relative;
+                    top: 7px;
+                }
             }
         }
 
@@ -40,8 +50,10 @@
             }
 
             ul {
+
                 li {
                     margin: 16px 0;
+                    
                     a {
                         text-decoration: none;
                         color: $color-gray;
