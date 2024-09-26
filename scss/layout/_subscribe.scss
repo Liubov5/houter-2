@@ -11,9 +11,17 @@
     align-items: center;
     flex-direction: column;
     row-gap: 35px;
-    img{
+    margin-bottom: 105px;
+    @media (width < 768px) {
+        [class^='subscribe__images--']{
+            display: none;
+        }
+    }
+    
+    [class^='subscribe__images--']{
         position: absolute;
     }
+
     &__images{
         &--1{
             top: 38px;
