@@ -8,88 +8,109 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+
     <header class="header">
-      <div class="header__container">
-        <a href="/counter.js" class="header__logo">
-          <img 
-          src="./img/logo-header.svg" 
-          alt="" 
-          class="header__logo-image"
-          width="36" height="36" loading="lazy"
-          />
-          Hounter
-        </a>
-        <nav class="header__navigation">
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a href="#about" class="header__menu-link">About Us</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#article" class="header__menu-link">Article</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#property" class="header__menu-link">Property</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__action">
-          <button class="header__sign-up-button button">Sign Up</button>
-        </div>
-      </div>
-      <div class="hero">
-        <div class="hero__intro">
-          <h2 class="hero__title">find the place to <br/>
-            live <span class="hero__title--transparent">your dreams</span><br/>
-            easily here
-          </h2>
-          <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
-          <div class="hero__search">
-            <img src="/img/icons/search-pin.svg" alt="">
-            <input type="search">
-            <button class="button">search</button>
+      <div class="container">
+        <div class="header__container">
+          <div class="header__logo-wrapper">
+            <a href="/counter.js" class="header__logo">
+              <img 
+              src="./img/logo-header.svg" 
+              alt="" 
+              class="header__logo-image"
+              width="36" height="36" loading="lazy"
+              />
+              Hounter
+            </a>
           </div>
-          <p class="hero__partnership">Our Partnership </p>
-          <ul class="partnership__list">
-            <li>
-              <a href="/" class="partnership__item">
-                <img src="/img/traveloka.png" alt="traveloka">
-              </a>
-            </li>
-            <li>
-              <a href="/" class="partnership__item">
-                <img src="/img/tiketcom.png" alt="tiketcom">
-              </a>
-            </li>
-            <li>
-              <a href="/" class="partnership__item">
-                <img src="/img/airbnb.png" alt="airbnb">
-              </a>
-            </li>
-            <li>
-              <a href="/" class="partnership__item">
-                <img src="/img/tripadvisor.png" alt="tripadvisor">
-              </a>
-            </li>
-          </ul>
+          <div class="header__wrapper">
+            <nav class="header__navigation">
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <a href="#about" class="header__menu-link">About Us</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#article" class="header__menu-link">Article</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#property" class="header__menu-link header__menu-link--property">Property</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__action">
+              <button class="header__sign-up-button button">Sign Up</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <section class="subscribe container">
-          <h2 class="subscribe__title">Subscribe For More Info <br/>
-          and update from Hounter</h2>
-          <div class="input__wrapper">
-            <img class="input__icon" src="img/subscribe_images/email_icon.png" />
-            <input placeholder="Your email here" class="input"/>
-            <button class="input__button">Subscribe Now</button>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__container">
+          <div class="hero__intro">
+            <h2 class="hero__title">find the place to <br/>
+              live <span class="hero__title--transparent">your dreams</span><br/>
+              easily here
+            </h2>
+            <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
+            <div class="hero__search search">
+              <img class="search__pin" src="/img/icons/search-pin.svg" alt="">
+              <input class="search__input" type="search" placeholder="Search for the location you want!">
+              <button class="search__button button">Search</button>
+            </div>
+            <p class="hero__partnership">Our Partnership </p>
+            <ul class="partnership__list">
+              <li>
+                <a href="/" class="partnership__item">
+                  <img src="/img/traveloka.png" alt="traveloka">
+                </a>
+              </li>
+              <li>
+                <a href="/" class="partnership__item">
+                  <img src="/img/tiketcom.png" alt="tiketcom">
+                </a>
+              </li>
+              <li>
+                <a href="/" class="partnership__item">
+                  <img src="/img/airbnb.png" alt="airbnb">
+                </a>
+              </li>
+              <li>
+                <a href="/" class="partnership__item">
+                  <img src="/img/tripadvisor.png" alt="tripadvisor">
+                </a>
+              </li>
+            </ul>
           </div>
-          <img src="img/subscribe_images/1.png" alt="" class="subscribe__images--1">
-          <img src="img/subscribe_images/2.png" alt="" class="subscribe__images--2">
-          <img src="img/subscribe_images/3.png" alt="" class="subscribe__images--3">
-          <img src="img/subscribe_images/4.png" alt="" class="subscribe__images--4">
-          <img src="img/subscribe_images/5.png" alt="" class="subscribe__images--5">
-          <img src="img/subscribe_images/6.png" alt="" class="subscribe__images--6">
-          <img src="img/subscribe_images/7.png" alt="" class="subscribe__images--7">
-          <img src="img/subscribe_images/8.png" alt="" class="subscribe__images--8">
+          <div class="hero__slider slider">
+            <div class="slider__item">
+              
+            </div>
+            <div class="slider__item">56 houses</div>
+            <div class="slider__item">4k+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe container">
+      <h2 class="subscribe__title">Subscribe For More Info <br/>
+      and update from Hounter</h2>
+      <div class="input__wrapper">
+        <img class="input__icon" src="img/subscribe_images/email_icon.png" />
+        <input placeholder="Your email here" class="input"/>
+        <button class="input__button">Subscribe Now</button>
+      </div>
+      <img src="img/subscribe_images/1.png" alt="" class="subscribe__images--1">
+      <img src="img/subscribe_images/2.png" alt="" class="subscribe__images--2">
+      <img src="img/subscribe_images/3.png" alt="" class="subscribe__images--3">
+      <img src="img/subscribe_images/4.png" alt="" class="subscribe__images--4">
+      <img src="img/subscribe_images/5.png" alt="" class="subscribe__images--5">
+      <img src="img/subscribe_images/6.png" alt="" class="subscribe__images--6">
+      <img src="img/subscribe_images/7.png" alt="" class="subscribe__images--7">
+      <img src="img/subscribe_images/8.png" alt="" class="subscribe__images--8">
     </section>
     <footer class="footer">
       <div class="footer__container">
