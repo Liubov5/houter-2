@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+@use "../base/_grid.scss" as _grid;
+
+.subscribe {
+    background: url('/img/subscribeBG.png');
+    border-radius:32px;
+    position: relative;
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    img{
+        position: absolute;
+    }
+    &__images{
+        &--1{
+            top: 38px;
+            left: 44px;
+        }
+        &--2{
+            top: 71px;
+            left:204px;
+        }
+        &--3{
+            left: 67px;
+            top: 173px;
+        }
+        &--4{
+            left: 195px;
+            top:178px;
+        }
+        &--5{
+            left: 930px;
+            top:44px;
+        }
+        &--6{
+            left: 964px;
+            top:143px;
+        }
+        &--7{
+            left: 1082px;
+            top:107px;
+        }
+        &--8{
+            left: 1072px;
+            top:197px;
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    
+}
+
