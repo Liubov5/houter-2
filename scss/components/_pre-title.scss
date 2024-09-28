@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+.pre-title{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: $color-dark-gray;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background: $color-red;
+    left: 0;
+  }
+}

@@ -3,10 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
-
-html {
   box-sizing: border-box;
 }
 
@@ -44,7 +40,7 @@ a {
 }
 
 .container {
-  max-width: 1270px;
+  max-width: 1326px;
   padding-inline: 15px;
   margin: 0 auto;
   width: 100%;
@@ -87,7 +83,7 @@ h1 {
 h2 {
   font-family: "Jost", sans-serif;
   font-weight: 600;
-  font-size: clamp(18px, 2.7vw, 52px);
+  font-size: clamp(18px, 2.2vw, 52px);
   text-transform: capitalize;
   color: #0e0e0e;
 }
@@ -104,7 +100,7 @@ h3 {
 p {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 171%;
   color: #555;
   opacity: 0.75;
@@ -291,6 +287,77 @@ p {
   margin: 50px;
 }
 
+.services {
+  margin-block: 150px;
+}
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 24px;
+}
+.services-swiper .swiper-slide {
+  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url(/images/delete/for-test-delete-later.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.8;
+  min-height: 420px;
+}
+.services-swiper .swiper-slide * {
+  transition: all 1300ms ease;
+}
+.services-swiper .swiper-slide:not(.services-swiper .swiper-slide-active) * {
+  display: none;
+}
+.services-swiper .swiper-slide {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.services__description {
+  margin-top: 9px;
+}
+.services__btn {
+  margin-top: 43px;
+}
+.services__title {
+  margin-top: 15px;
+}
+.services .services-swiper-media__logo {
+  clip-path: polygon(0% 0%, 87% 0, 100% 100%, 0 83%);
+  background-color: #ffffff;
+  width: 95px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: background-color 300ms ease;
+}
+.services .services-swiper-media__logo:hover {
+  background-color: #fedac1;
+}
+.services .services-swiper-content__title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-family: "Jost", sans-serif;
+}
+.services .services-swiper-content__description {
+  font-family: "Barlow", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  margin-top: 13px;
+}
+
 .button {
   position: relative;
   color: #ffffff;
@@ -301,6 +368,8 @@ p {
   border: none;
   font-size: 1.6rem;
   line-height: 1.6;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 .button::after {
   content: "";
@@ -327,6 +396,8 @@ p {
   border: 1px solid #000000;
   font-size: 1.6rem;
   line-height: 1.6;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 .button-white::after {
   content: "";
@@ -485,6 +556,37 @@ p {
   line-height: 142%;
   color: #0e0e0e;
   transition: all 0.5s;
+}
+
+.pre-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #0e0e0e;
+}
+.pre-title::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background: #fb5b11;
+  left: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

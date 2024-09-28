@@ -1,5 +1,8 @@
 @use "../abstracts/variables" as *;
 
+
+
+// TODO: refactor all file
 .button {
     position: relative;
     color: $color-white;
@@ -10,6 +13,8 @@
     border: none;
     font-size: 1.6rem;
     line-height: 1.6;
+    transition: all 300ms ease;
+    cursor: pointer;
     &::after {
         content: '';
         position: absolute;
@@ -37,6 +42,8 @@
     border: 1px solid $color-dark;
     font-size: 1.6rem;
     line-height: 1.6;
+    transition: all 300ms ease;
+    cursor: pointer;
     &::after {
         content: '';
         position: absolute;
