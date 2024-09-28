@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 
 .services{
-  margin-block: 150px;
+  margin-top: 300px;
+  margin-bottom: 150px;
   &__wrapper{
     display: grid;
     grid-template-columns: 5fr 7fr;

@@ -288,7 +288,8 @@ p {
 }
 
 .services {
-  margin-block: 150px;
+  margin-top: 300px;
+  margin-bottom: 150px;
 }
 .services__wrapper {
   display: grid;
