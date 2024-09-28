@@ -291,7 +291,8 @@ p {
 }
 
 .services {
-  margin-block: 150px;
+  margin-top: 300px;
+  margin-bottom: 150px;
 }
 .services__wrapper {
   display: grid;
@@ -369,6 +370,7 @@ p {
   width: 100%;
   height: 568.65px;
   filter: grayscale(80%);
+  border: 0;
 }
 
 .button {
