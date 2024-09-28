@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper2", {
   slidesPerView: "auto",
   centeredSlides: true,
   spaceBetween: 24,

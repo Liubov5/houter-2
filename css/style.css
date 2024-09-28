@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Jost&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +40,6 @@ a {
 
 .container {
   max-width: 1326px;
-  max-width: 1270px;
   padding-inline: 15px;
   margin: 0 auto;
   width: 100%;
@@ -85,7 +83,6 @@ h2 {
   font-family: "Jost", sans-serif;
   font-weight: 600;
   font-size: clamp(18px, 2.2vw, 52px);
-  font-size: clamp(18px, 2.7vw, 52px);
   text-transform: capitalize;
   color: #0e0e0e;
 }
@@ -263,8 +260,6 @@ p {
   margin-top: 13px;
 }
 
-}
-
 .button {
   position: relative;
   color: #ffffff;
@@ -319,37 +314,6 @@ p {
 .button-white:hover {
   background-color: #ff6600;
   border: 1px solid #ffffff;
-}
-
-.pre-title {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 25px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #0e0e0e;
-}
-.pre-title::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 1px;
-  background: #fb5b11;
-  left: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 .hero {
@@ -494,6 +458,37 @@ img {
   line-height: 142%;
   color: #0e0e0e;
   transition: all 0.5s;
+}
+
+.pre-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #0e0e0e;
+}
+.pre-title::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background: #fb5b11;
+  left: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
