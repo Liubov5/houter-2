@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Jost&display=swap");
 * {
   margin: 0;
@@ -95,7 +96,24 @@ p {
   opacity: 0.75;
 }
 
-<<<<<<< HEAD
+.price-table {
+  background-color: #f8f8f8;
+  max-height: 1084px;
+  padding: 143px 312px 236px;
+  position: relative;
+}
+.price-table::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: url("../../images/icons/world map.png") no-repeat center/contain;
+  z-index: 1;
+}
+
 .price-table-container {
   display: flex;
   flex-direction: column;
@@ -105,10 +123,90 @@ p {
   flex-direction: column;
   align-items: center;
 }
+.price-table-container .price-table-title h2 {
+  margin-top: 14px;
+}
+.price-table-container .price-table-title h3 hr {
+  position: relative;
+  width: 15px;
+  display: inline-block;
+  margin: 0 5px 0;
+  bottom: 5px;
+  border-color: #fb5b11;
+}
 .price-table-container .price-cards {
+  margin-top: 67px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-=======
+  gap: 24px;
+}
+.price-table-container .price-card {
+  max-width: 416px;
+  background-color: #ffffff;
+  border: 1px solid #555;
+}
+.price-table-container .price-card h2 {
+  margin: 0 48px 13px;
+}
+.price-table-container .price-card h2 span {
+  font-size: 16px;
+  color: #4E5362;
+}
+.price-table-container .price-card .special-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-table-container .price-card .special-card .special-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 0 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #39ca6e;
+  color: #ffffff;
+}
+.price-table-container .star-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 27px;
+  gap: 6px;
+}
+.price-table-container .star-container img {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 3px;
+}
+.price-table-container hr {
+  margin-inline: 50px;
+  color: #d8d8d8;
+}
+.price-table-container .price-card__descritpion {
+  margin: 19px 48px 0;
+}
+.price-table-container .price-card__descritpion ul {
+  list-style: none;
+}
+.price-table-container .price-card__descritpion ul li {
+  line-height: 2rem;
+}
+.price-table-container .price-card__descritpion ul li span {
+  color: #555;
+}
+.price-table-container .price-card__descritpion ul li::before {
+  content: "•";
+  font-size: 1rem;
+  margin-right: 8px;
+  margin-left: 3px;
+}
+.price-table-container button {
+  margin: 50px;
+}
+
 .button {
   position: relative;
   color: #ffffff;
@@ -159,7 +257,6 @@ p {
 .button-white:hover {
   background-color: #ff6600;
   border: 1px solid #ffffff;
->>>>>>> 8c3222fb2fa202704ec441f9c59fc4c9f32458ec
 }
 
 /*# sourceMappingURL=style.css.map */
