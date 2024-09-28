@@ -7,47 +7,55 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-      
-      .swiper {
-        width: 100%;
-        height: 100%;
-        pointer-events: all !important;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #101aa1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      }
-      .swiper__pagination--bullet{
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        background-size: cover;
-        background-position: center center;
-      }
-    </style>
+    
   </head>
   <body>
     <section class="slider__reviews container">
       <p>Our Testimonials</p>
-      <h1>What our Clients Say About
-        our work.</h1>
+      <h2 class="jost-600">What our Clients Say About
+        our work.</h2>
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. Строительная площадка находилась в центре города, что создавало определенные трудности, но команда профессионалов справлялась с задачей на высоком уровне. Работы начались вовремя, и с каждым днем проект обретал все более ясные очертания.</div>
-          <div class="swiper-slide">Качество материалов, использованных при возведении, впечатляет. Архитектурное оформление здания гармонично вписывается в окружающий пейзаж, сочетая современные тенденции с элементами классики. Я был приятно удивлён уровнем внимания, уделяемого каждому этапу строительства – от фундамента до отделки.</div>
-          <div class="swiper-slide">оманда строителей продемонстрировала высокий профессионализм и строгое соблюдение сроков. Особенно хочу отметить защиту окружающей среды: используются только экологически чистые материалы, а строительный мусор перерабатывается.</div>
+       
+        <div class="swiper-wrapper swiper-wrapper__custom">
+          <div class="swiper-slide">
+            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
+            <div class="swiper__reviews--text--block">
+              <div>
+                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+              </div>
+              <div>
+                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+                <p class="jost-400">Architect Designer </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
+            <div class="swiper__reviews--text--block">
+              <div>
+                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+              </div>
+              <div>
+                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+                <p class="jost-400">Architect Designer </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
+            <div class="swiper__reviews--text--block">
+              <div>
+                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+              </div>
+              <div>
+                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+                <p class="jost-400">Architect Designer </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper__divider">
+          <img src="./images/reviews/line.png"/>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -61,10 +69,11 @@
           direction: "vertical",
           pagination: {
             el: ".swiper-pagination",
-            type:'bullets',
+            bulletActiveClass:'reviews__img-active',
+            bulletClass:'swiper__pagination--custom--bullet',
             clickable: true,
             renderBullet: function (index, className) {
-              return `<div class='swiper__pagination--bullet' style='background-image:url(${pagination__images[index]})'>${index}</div>`
+              return `<div class=' ${className}' style='background-image:url(${pagination__images[index]})'></div>`
             },
           },
         });
