@@ -10,7 +10,26 @@
     
   </head>
   <body>
-    <section class="slider__reviews container">
+
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__info">
+          <h1 class="hero__title">Experts in construction</h1>
+          <p class="hero__description">The construction industry boasts a diverse range of experts, each playing
+          a crucial role in bringing a project from vision to reality. </p>
+          <button class="hero__button button">Explore More</button>
+        </div>
+        <div class="hero__human">
+          <img src="/images/hero-human.png" alt="">
+        </div>
+        <div class="hero__track">
+          <img src="/images/track.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--отзывы слайдер-->
+    <section class="swiper__reviews container">
       <p>Our Testimonials</p>
       <h2 class="jost-600">What our Clients Say About
         our work.</h2>
@@ -58,10 +77,122 @@
           <img src="./images/reviews/line.png"/>
         </div>
         <div class="swiper-pagination"></div>
+    </section>
+    
+    <section class="statistics">
+      <div class="statistics__container container">
+        <p class="statistics__caption">
+          Our Company Status
+        </p>
+          <h2 class="statistics__title">Trusted & Reliable</h2>
+          <div class="statistics__numbers numbers">
+            <div class="numbers__items">
+              <h3 class="numbers__title">110+</h3>
+              <p class="numbers__description">Completed Projects</p>
+            </div>
+            <div class="numbers__items">
+              <h3 class="numbers__title">280+</h3>
+              <p class="numbers__description">Team Member</p>
+            </div>
+            <div class="numbers__items">
+              <h3 class="numbers__title">100%+</h3>
+              <p class="numbers__description">Client Satisfaction</p>
+            </div>
+            <div class="numbers__items">
+              <h3 class="numbers__title">30+</h3>
+              <p class="numbers__description">Running Project</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="price-table">
+      <div class="price-table-container container">
+        <div class="price-table-title">
+          <h3>Our Price table</h3>
+          <h2>Solutions For Price table</h2>
+        </div>
+
+        <div class="price-cards">
+          <div class="price-card">
+            <img src="#" alt="rectangle">
+            <h2>$19.99<span> /M</span></h2>
+            <div class="star-container">
+              <img src="#" alt="star">
+              <h3>Basic</h3>
+              <hr>
+                <div class="price-card__descritpion">
+                  <ul>
+                    <li>24/7 Free Hotline Servic</li>
+                    <li>Chat Support</li>
+                    <li>5 Months After Delivery Support</li>
+                    <li>Support with 8 Engineers</li>
+                    <li class="inaccessible-options">Team Management</li>
+                    <li class="inaccessible-options">Free Digital Marketing & Analysis</li>
+                  </ul>
+                </div>
+                <button class="button">
+                  <p>Start Free Trial</p>
+                  <img src="" alt="arrow">
+                </button>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <img src="#" alt="rectangle">
+            <div class="special-div">Special</div>
+            <h2>$29.99<span> /M</span></h2>
+            <div class="star-container">
+              <img src="#" alt="star">
+              <h3>Standart</h3>
+              <hr>
+                <div class="price-card__descritpion">
+                  <ul>
+                    <li>24/7 Free Hotline Servic</li>
+                    <li>Chat Support</li>
+                    <li>5 Months After Delivery Support</li>
+                    <li>Support with 8 Engineers</li>
+                    <li>Team Management</li>
+                    <li>Free Digital Marketing & Analysis</li>
+                  </ul>
+                </div>
+                <button class="button">
+                  <p>Start Free Trial</p>
+                  <img src="" alt="arrow">
+                </button>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <img src="#" alt="rectangle">
+            <h2>$39.99<span> /M</span></h2>
+            <div class="star-container">
+              <img src="#" alt="star">
+              <h3>Premium</h3>
+              <hr>
+                <div class="price-card__descritpion">
+                  <ul>
+                    <li>24/7 Free Hotline Servic</li>
+                    <li>Chat Support</li>
+                    <li>5 Months After Delivery Support</li>
+                    <li>Support with 8 Engineers</li>
+                    <li>Team Management</li>
+                    <li class="inaccessible-options">Free Digital Marketing & Analysis</li>
+                  </ul>
+                </div>
+                <button class="button">
+                  <p>Start Free Trial</p>
+                  <img src="" alt="arrow">
+                </button>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <script type="module" src="/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         let pagination__images = ['./images/reviews/1.jpg' , './images/reviews/2.jpg' , './images/reviews/3.jpg' ]

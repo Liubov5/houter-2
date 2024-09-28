@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Jost&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,19 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
 }
 
 .container {
@@ -166,6 +180,20 @@ p {
   margin-top: 50px;
 }
 
+.price-table-container {
+  display: flex;
+  flex-direction: column;
+}
+.price-table-container .price-table-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-table-container .price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .button {
   position: relative;
   color: #ffffff;
@@ -216,6 +244,150 @@ p {
 .button-white:hover {
   background-color: #ff6600;
   border: 1px solid #ffffff;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.9) 100%), url("/images/excavator-bg-hero.jpg") center/cover no-repeat, url("/images/ribbon-bg.png") center/cover no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/ribbon-bg.png");
+  width: 508px;
+  height: 364px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+.hero__container {
+  min-width: 1600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.hero__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  z-index: 2;
+}
+.hero__title {
+  font-size: 158px;
+  line-height: 0.87;
+}
+.hero__description {
+  color: #d8d8d8;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.42;
+}
+.hero__human {
+  display: flex;
+  align-items: center;
+  width: 1fr;
+  height: 100%;
+}
+.hero__track {
+  position: absolute;
+  bottom: -175px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.statistics {
+  position: relative;
+}
+.statistics::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(/images/architecture-statistics.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -30px;
+  left: 0;
+  width: 286px;
+  height: 545px;
+}
+.statistics__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.statistics__caption {
+  font-family: "Jost", sans-serif;
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #0e0e0e;
+}
+.statistics__caption::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #ff6600;
+}
+.statistics__title {
+  padding-top: 20px;
+  padding-bottom: 75px;
+  font-size: 52px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.numbers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 18px;
+}
+.numbers__items {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 25%;
+  transition: all 0.5s;
+}
+.numbers__items:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.numbers__items:hover > * {
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.numbers__title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.19;
+  padding-bottom: 20px;
+  transition: all 0.5s;
+}
+.numbers__description {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  color: #0e0e0e;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
