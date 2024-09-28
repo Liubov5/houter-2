@@ -185,11 +185,13 @@ p {
 .price-table::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 996.8px;
+  height: 640px;
+  opacity: 30%;
   background: url("../../images/icons/world map.png") no-repeat center/contain;
   z-index: 1;
 }
@@ -224,6 +226,7 @@ p {
   max-width: 416px;
   background-color: #ffffff;
   border: 1px solid #555;
+  z-index: 2;
 }
 .price-table-container .price-card h2 {
   margin: 0 48px 13px;
@@ -288,7 +291,8 @@ p {
 }
 
 .services {
-  margin-block: 150px;
+  margin-top: 300px;
+  margin-bottom: 150px;
 }
 .services__wrapper {
   display: grid;
@@ -356,6 +360,17 @@ p {
   font-size: 16px;
   line-height: 162%;
   margin-top: 13px;
+}
+
+.map-section {
+  width: 100%;
+  height: auto;
+}
+.map-section .map {
+  width: 100%;
+  height: 568.65px;
+  filter: grayscale(80%);
+  border: 0;
 }
 
 .button {
