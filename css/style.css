@@ -29,6 +29,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
 .container {
   max-width: 1170px;
   padding-inline: 15px;
@@ -216,6 +229,93 @@ p {
   bottom: -175px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.statistics {
+  position: relative;
+}
+.statistics::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(/images/architecture-statistics.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -30px;
+  left: 0;
+  width: 286px;
+  height: 545px;
+}
+.statistics__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.statistics__caption {
+  font-family: "Jost", sans-serif;
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #0e0e0e;
+}
+.statistics__caption::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #ff6600;
+}
+.statistics__title {
+  padding-top: 20px;
+  padding-bottom: 75px;
+  font-size: 52px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.numbers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 18px;
+}
+.numbers__items {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 25%;
+  transition: all 0.5s;
+}
+.numbers__items:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.numbers__items:hover > * {
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.numbers__title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.19;
+  padding-bottom: 20px;
+  transition: all 0.5s;
+}
+.numbers__description {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  color: #0e0e0e;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
