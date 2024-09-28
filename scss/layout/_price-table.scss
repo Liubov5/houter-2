@@ -20,8 +20,6 @@
     }
 }
 
-
-
 .price-table-container {
     display: flex;
     flex-direction: column;
@@ -36,6 +34,7 @@
         }
 
         h3 {
+
             hr {
                 position: relative;
                 width: 15px;
@@ -45,7 +44,6 @@
                 border-color: $color-red;
             }
         }
-
     }
 
     .price-cards {
@@ -62,6 +60,36 @@
         border: 1px solid $color-gray;
 
         z-index: 2;
+
+        &:hover {
+                .rectangle {
+                    border-top: 50px solid $color-orange;
+                }
+        }
+        .triangle-wrapper {
+            position: relative;
+            height: 50px;
+          }
+          
+          .rectangle {
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid transparent; /* Невидимая нижняя часть */
+            border-right: 50px solid transparent;  /* Правая часть */
+            border-top: 50px solid #4a4a4a;        /* Верхняя видимая часть */
+          }
+          
+          .rectangle::after {
+            content: "";
+            position: absolute;
+            top: -50px; /* Сдвиг, чтобы точно соответствовать границе */
+            left: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid transparent; /* Уменьшенная нижняя часть */
+            border-right: 50px solid transparent;
+            border-top: 30px solid white; /* Цвет совпадает с фоном, для "сокрытия" части */
+          }
 
         h2 {
             margin: 0 48px 13px;
