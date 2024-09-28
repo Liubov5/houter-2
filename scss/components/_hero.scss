@@ -1,1 +1,62 @@
 @use "../abstracts/variables" as *;
+
+
+.hero {
+    position: relative;
+    background: 
+        linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.9) 100%), 
+        url('/images/excavator-bg-hero.jpg') center/cover no-repeat, 
+        url('/images/ribbon-bg.png') center/cover no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('/images/ribbon-bg.png');
+        width: 508px;
+        height: 364px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+    }
+    &__container {
+        min-width: 1600px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        z-index: 2;
+    }
+    &__title {
+        font-size: 158px;
+        line-height: 0.87;
+    }
+    &__description {
+        color: $color-light-gray;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.42;
+    }
+    &__human {
+        display: flex;
+        align-items: center;
+        width: 1fr;
+        height: 100%;
+    }
+    &__track {
+        position: absolute;
+        bottom: -175px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
