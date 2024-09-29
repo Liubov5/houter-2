@@ -1,0 +1,106 @@
+@use "../abstracts/variables" as *;
+
+.projects{
+   
+    margin-top: 100px;
+    &__text{
+        margin-bottom: 30px;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__slide--info{
+        opacity: 0;
+        transition: all .5s;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        &--tag{
+            background-color: $color-orange;
+            padding: 10px 15px;
+            color: $color-white;
+            width: fit-content;
+            position: absolute;
+            bottom: 130px;
+            left: 30px;
+        }
+        &--title{
+            color: white;
+            background-color: $color-dark;
+            padding: 10px 15px;
+            color: $color-white;
+            width: fit-content;
+            font-size: 32px;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+    }
+    &__slide--content{
+        height: 400px;     
+        background-size:  cover;
+        background-position: center center;
+        &--1{
+            background-image: url("/images/projects/1.jpg");
+        }
+        &--1:hover .projects__slide--info{
+            opacity: 1;
+        }
+        &--2{
+            background-image: url("/images/projects/2.jpg");
+        }
+        &--2:hover .projects__slide--info{
+            opacity: 1;
+        }
+        &--3{
+            background-image: url("/images/projects/3.jpg");
+        }
+        &--3:hover .projects__slide--info{
+            opacity: 1;
+        }
+        &--4{
+            background-image: url("/images/projects/4.jpg");
+        }
+        &--4:hover .projects__slide--info{
+            opacity: 1;
+        }
+        &--5{
+            background-image: url("/images/projects/5.jpg");
+        }
+        &--5:hover .projects__slide--info{
+            opacity: 1;
+        }
+        &--6{
+            background-image: url("/images/projects/6.jpg");
+        }
+        &--6:hover .projects__slide--info{
+            opacity: 1;
+        }
+    }
+    &__swiper__arrows{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__swiper__button--next, &__swiper__button--prev{
+       cursor: pointer;
+       
+    }
+    &__swiper__button--next:hover path, &__swiper__button--prev:hover path{
+        fill: $color-orange;
+    }
+  
+}
+

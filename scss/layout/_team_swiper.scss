@@ -1,0 +1,68 @@
+@use "../abstracts/variables" as *;
+
+.swiper__team{
+    
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    margin-top: 100px;
+    column-gap: 60px;
+    background-color: green;
+    &--name{
+        font-size: 24px;
+        color: black;
+    }
+    &--profession{
+        font-size: 24px;
+    }
+    &--info{
+        
+        row-gap: 30px;
+        width: 790px;
+        
+        &--title{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &--text{
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+    }
+}
+.swiper__pagination--team--bullet{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.swiper__pagination--team--bullet-active p:first-child{
+    color:red;
+    font-size: 32px;
+    border-bottom: 2px solid red;
+
+}
+
+
+.swiper-slide{
+    &--img{
+        width: 410px;
+        height: 500px;
+        background-position: center center;
+        background-size: cover;
+        &--1{
+            background-image: url(/images/reviews/1.jpg);
+        }
+        &--2{
+            background-image: url(/images/reviews/2.jpg);
+        }
+        &--3{
+            background-image: url(/images/reviews/3.jpg);
+        }
+        &--4{
+            background-image: url(/images/reviews/1.jpg);
+        }
+    }
+    
+}

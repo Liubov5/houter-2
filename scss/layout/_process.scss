@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as *;
+
+.process{
+    margin-top: 100px;
+    // background-color: pink;
+    &__text{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    &__tabs{
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+        margin-bottom: 90px;
+    }
+    &__tab{
+        text-align: center;
+        width: 416px;
+        height: 80px;
+        border:1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &__text{
+            font-size: 24px;
+            color: black;
+        }
+        &--active{
+            background-color: $color-orange;
+            border:none;
+            position: relative;
+        }
+        &--active::after{
+            content: '';
+            position: absolute; 
+            left: 45%; 
+            bottom: -20px; 
+            border: 10px solid transparent; 
+            border-top: 10px solid $color-orange; 
+        }
+        &--active p{
+           color: $color-white;
+           opacity: 1;
+        }
+    }
+
+    &__content{
+        width: 100%;
+        height: 540px;
+        background-color: orange;
+        &--video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
