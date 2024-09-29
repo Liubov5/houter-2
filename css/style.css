@@ -331,7 +331,6 @@ p {
   border-top: 50px solid #4a4a4a; /* Верхняя видимая часть */
 }
 .price-table-container .price-card .rectangle::after {
-  content: "";
   position: absolute;
   top: -50px; /* Сдвиг, чтобы точно соответствовать границе */
   left: 0;
@@ -355,17 +354,7 @@ p {
   border-right: 50px solid transparent; /* Правая часть */
   border-top: 50px solid #4a4a4a; /* Верхняя видимая часть */
 }
-.price-table-container .price-card .rectangle::after {
-  content: "";
-  position: absolute;
-  top: -50px; /* Сдвиг, чтобы точно соответствовать границе */
-  left: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 20px solid transparent; /* Уменьшенная нижняя часть */
-  border-right: 50px solid transparent;
-  border-top: 30px solid white; /* Цвет совпадает с фоном, для "сокрытия" части */
-}
+
 .price-table-container .price-card h2 {
   margin: 0 48px 13px;
 }
