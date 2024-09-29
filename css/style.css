@@ -131,7 +131,7 @@ p {
   width: 100%;
   height: 520px;
   opacity: 1;
-  background: url("../../images/footer-image.svg") no-repeat center/contain;
+  background: url("../images/footer-image.svg") no-repeat center/contain;
   z-index: 1;
 }
 .footer .footer__container .footer__top {
@@ -277,7 +277,7 @@ p {
   width: 996.8px;
   height: 640px;
   opacity: 30%;
-  background: url("../../images/reviews/worldMap.png") no-repeat center/contain;
+  background: url("../images/reviews/worldMap.png") no-repeat center/contain;
   z-index: 1;
 }
 
@@ -540,7 +540,7 @@ p {
   color: var(--0e0e0e);
 }
 .about-swiper .swiper-slide {
-  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url(/images/delete/for-test-delete-later.jpg) no-repeat center center;
+  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url(../images/delete/for-test-delete-later.jpg) no-repeat center center;
   background-size: cover;
   min-height: 332px;
   display: flex;
@@ -626,16 +626,16 @@ p {
   background-size: cover;
 }
 .swiper-slide--img--1 {
-  background-image: url(/images/reviews/1.jpg);
+  background-image: url(../images/reviews/1.jpg);
 }
 .swiper-slide--img--2 {
-  background-image: url(/images/reviews/2.jpg);
+  background-image: url(../images/reviews/2.jpg);
 }
 .swiper-slide--img--3 {
-  background-image: url(/images/reviews/3.jpg);
+  background-image: url(../images/reviews/3.jpg);
 }
 .swiper-slide--img--4 {
-  background-image: url(/images/reviews/1.jpg);
+  background-image: url(../images/reviews/1.jpg);
 }
 
 .process {
@@ -750,37 +750,37 @@ p {
   background-position: center center;
 }
 .projects__slide--content--1 {
-  background-image: url("/images/projects/1.jpg");
+  background-image: url("../images/projects/1.jpg");
 }
 .projects__slide--content--1:hover .projects__slide--info {
   opacity: 1;
 }
 .projects__slide--content--2 {
-  background-image: url("/images/projects/2.jpg");
+  background-image: url("../images/projects/2.jpg");
 }
 .projects__slide--content--2:hover .projects__slide--info {
   opacity: 1;
 }
 .projects__slide--content--3 {
-  background-image: url("/images/projects/3.jpg");
+  background-image: url("../images/projects/3.jpg");
 }
 .projects__slide--content--3:hover .projects__slide--info {
   opacity: 1;
 }
 .projects__slide--content--4 {
-  background-image: url("/images/projects/4.jpg");
+  background-image: url("../images/projects/4.jpg");
 }
 .projects__slide--content--4:hover .projects__slide--info {
   opacity: 1;
 }
 .projects__slide--content--5 {
-  background-image: url("/images/projects/5.jpg");
+  background-image: url("../images/projects/5.jpg");
 }
 .projects__slide--content--5:hover .projects__slide--info {
   opacity: 1;
 }
 .projects__slide--content--6 {
-  background-image: url("/images/projects/6.jpg");
+  background-image: url("../images/projects/6.jpg");
 }
 .projects__slide--content--6:hover .projects__slide--info {
   opacity: 1;
@@ -860,7 +860,7 @@ p {
 .button::after {
   content: "";
   position: absolute;
-  background-image: url("/images/icons/arrow.svg");
+  background-image: url("../images/icons/arrow.svg");
   width: 17px;
   aspect-ratio: 1;
   background-repeat: no-repeat;
@@ -888,7 +888,7 @@ p {
 .button-white::after {
   content: "";
   position: absolute;
-  background-image: url("/images/icons/arrow-black.svg");
+  background-image: url("../images/icons/arrow-black.svg");
   width: 17px;
   aspect-ratio: 1;
   background-repeat: no-repeat;
@@ -902,14 +902,14 @@ p {
 
 .hero {
   position: relative;
-  background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.9) 100%), url("/images/excavator-bg-hero.jpg") center/cover no-repeat, url("/images/ribbon-bg.png") center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.9) 100%), url("../images/excavator-bg-hero.jpg") center/cover no-repeat, url("../images/ribbon-bg.png") center/cover no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .hero::after {
   content: "";
   position: absolute;
-  background-image: url("/images/ribbon-bg.png");
+  background-image: url("../images/ribbon-bg.png");
   width: 508px;
   height: 364px;
   background-repeat: no-repeat;
@@ -964,7 +964,7 @@ p {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(/images/architecture-statistics.png);
+  background-image: url(../images/architecture-statistics.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: -30px;
@@ -1106,7 +1106,7 @@ img {
   content: "";
   position: absolute;
   display: block;
-  background-image: url("/images/architecture-statistics.png");
+  background-image: url("../images/architecture-statistics.png");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 0px;
@@ -1147,7 +1147,7 @@ img {
 .modals__more::after {
   content: "";
   display: block;
-  background-image: url("/images/icons/big-arrow-orange.svg");
+  background-image: url("../images/icons/big-arrow-orange.svg");
   width: 26px;
   height: 8px;
   background-repeat: no-repeat;
@@ -1177,7 +1177,7 @@ img {
   color: #000000;
 }
 .modals__item:hover .modals__more::after {
-  background-image: url("/images/icons/big-arrow-black.svg");
+  background-image: url("../images/icons/big-arrow-black.svg");
 }
 .modals__item img {
   height: 300px;
@@ -1196,7 +1196,7 @@ img {
   content: "24 Jun \a 2024";
   display: block;
   position: absolute;
-  background-image: url("/images/orange-element-small.png");
+  background-image: url("../images/orange-element-small.png");
   background-repeat: no-repeat;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
@@ -1228,7 +1228,7 @@ img {
   white-space: pre;
   content: "29 Jun \a 2024";
   position: absolute;
-  background-image: url("/images/orange-element.png");
+  background-image: url("../images/orange-element.png");
   background-repeat: no-repeat;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
