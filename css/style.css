@@ -438,7 +438,7 @@ p {
   gap: 24px;
 }
 .services-swiper .swiper-slide {
-  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url(/images/delete/for-test-delete-later.jpg) no-repeat center center;
+  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url("../images/delete/for-test-delete-later.jpg") no-repeat center center;
   background-size: cover;
   opacity: 0.8;
   min-height: 420px;
@@ -540,7 +540,7 @@ p {
   color: var(--0e0e0e);
 }
 .about-swiper .swiper-slide {
-  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url(../images/delete/for-test-delete-later.jpg) no-repeat center center;
+  background: linear-gradient(180deg, rgba(5, 0, 0, 0) 0%, #0e0e0e 100%), url("../images/delete/for-test-delete-later.jpg") no-repeat center center;
   background-size: cover;
   min-height: 332px;
   display: flex;
@@ -626,16 +626,16 @@ p {
   background-size: cover;
 }
 .swiper-slide--img--1 {
-  background-image: url(../images/reviews/1.jpg);
+  background-image: url("../images/reviews/1.jpg");
 }
 .swiper-slide--img--2 {
-  background-image: url(../images/reviews/2.jpg);
+  background-image: url("../images/reviews/2.jpg");
 }
 .swiper-slide--img--3 {
-  background-image: url(../images/reviews/3.jpg);
+  background-image: url("../images/reviews/3.jpg");
 }
 .swiper-slide--img--4 {
-  background-image: url(../images/reviews/1.jpg);
+  background-image: url("../images/reviews/1.jpg");
 }
 
 .process {
@@ -964,7 +964,7 @@ p {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(../images/architecture-statistics.png);
+  background-image: url("../images/architecture-statistics.png");
   background-repeat: no-repeat;
   background-size: contain;
   top: -30px;
