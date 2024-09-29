@@ -1,3 +1,125 @@
 @use "../abstracts/variables" as *;
 @use "../base/_grid.scss" as _grid;
 
+.footer {
+    margin-top: -192px;
+    width: 100%;
+    background-color: $color-dark-gray;
+
+    .footer__container {
+        height: 684px;
+        max-width: 1920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 140px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 115px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 520px;
+            opacity: 1;
+            background: url('../../images/footer-image.svg') no-repeat center/contain;
+            z-index: 1;
+        }
+        
+        .footer__top {
+            display: flex;
+            justify-content: space-between;
+            gap: 150px;
+            z-index: 2;
+
+            .footer__top__left {
+                display: flex;
+                flex-direction: column; 
+                
+                span {
+                    color: $color-orange;
+                }
+                
+                .h3-footer {
+                    color: $color-white;
+                    opacity: 1;
+                }
+
+                .footer__branding {
+                    display: flex;
+                    flex-direction: row;
+
+                    img {
+                        width: 86px;
+                        height: 74px;
+                    }
+
+                    h3 {
+                        color: $color-white;
+                        opacity: 0.7;
+                        
+                        .footer-span {
+                            color: $color-white;
+                            opacity: 1;
+                            font-size: 36px;
+                        };
+                    }
+                }
+
+                .footer--mrg {
+                    margin: 12px 0 36px 0;
+                    display: block;
+                }
+            }
+
+            .footer__top__right {
+                display: flex;
+                gap: 0;
+
+                .footer__links {
+                    h3 {
+                        color: $color-white;
+                        margin-bottom: 24px;
+                    }
+                    
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        
+                        li {
+                            &:hover {
+                                color: $color-orange;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: $color-white;
+                                opacity: 0.7;
+                            }
+                        }
+                    
+                    }
+                }
+
+                .footer__links--middle {
+                    margin: 0 161px 0 131px;
+                }
+            }
+        }
+
+        .footer__bottom {
+            background-color: $color-dark;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+    }
+}

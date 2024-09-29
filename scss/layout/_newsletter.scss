@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as *;
+
+.newsletter {
+    max-height: 184px;
+    position: relative;
+    top: -92px;
+    z-index: 2;
+
+    .newsletter__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 110px;
+
+        background-color: $color-orange;
+
+        h1 {
+            position: absolute;
+            left: 270px;
+            top: 40px;
+            bottom: 40px;
+            opacity: 0.1;
+            text-transform: uppercase;
+            position: absolute;
+            font-size: 96px;
+        }
+
+        .newsletter__container__text {
+            h2 {
+                color: $color-white;
+                font-size: 32px;
+            }
+        }
+
+
+        .newsletter__container__form {
+            height: 45px;
+            display: flex;
+            align-items: baseline;
+            border-bottom: 1px solid $color-white;
+
+            .email-input {
+                border: none;
+                outline: none;
+                 width: 300px;
+                font-size: 14px;
+                background-color: $color-orange;
+            }
+
+            button {
+                width: 38px;
+                height: 31px;
+                border: none;
+            }
+        }
+    }
+}

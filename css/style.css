@@ -106,6 +106,106 @@ p {
   opacity: 0.75;
 }
 
+.footer {
+  margin-top: -192px;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+.footer .footer__container {
+  height: 684px;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 140px;
+  position: relative;
+}
+.footer .footer__container::before {
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 520px;
+  opacity: 1;
+  background: url("../../images/footer-image.svg") no-repeat center/contain;
+  z-index: 1;
+}
+.footer .footer__container .footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  z-index: 2;
+}
+.footer .footer__container .footer__top .footer__top__left {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__container .footer__top .footer__top__left span {
+  color: #ff6600;
+}
+.footer .footer__container .footer__top .footer__top__left .h3-footer {
+  color: #ffffff;
+  opacity: 1;
+}
+.footer .footer__container .footer__top .footer__top__left .footer__branding {
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__container .footer__top .footer__top__left .footer__branding img {
+  width: 86px;
+  height: 74px;
+}
+.footer .footer__container .footer__top .footer__top__left .footer__branding h3 {
+  color: #ffffff;
+  opacity: 0.7;
+}
+.footer .footer__container .footer__top .footer__top__left .footer__branding h3 .footer-span {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 36px;
+}
+.footer .footer__container .footer__top .footer__top__left .footer--mrg {
+  margin: 12px 0 36px 0;
+  display: block;
+}
+.footer .footer__container .footer__top .footer__top__right {
+  display: flex;
+  gap: 0;
+}
+.footer .footer__container .footer__top .footer__top__right .footer__links h3 {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.footer .footer__container .footer__top .footer__top__right .footer__links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer__container .footer__top .footer__top__right .footer__links ul li:hover {
+  color: #ff6600;
+}
+.footer .footer__container .footer__top .footer__top__right .footer__links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.footer .footer__container .footer__top .footer__top__right .footer__links--middle {
+  margin: 0 161px 0 131px;
+}
+.footer .footer__container .footer__bottom {
+  background-color: #000000;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
 .swiper__reviews {
   height: 600px;
   margin-top: 100px;
@@ -177,7 +277,7 @@ p {
   width: 996.8px;
   height: 640px;
   opacity: 30%;
-  background: url("../../images/reviews/world map.png") no-repeat center/contain;
+  background: url("../../images/reviews/worldMap.png") no-repeat center/contain;
   z-index: 1;
 }
 
@@ -695,6 +795,53 @@ p {
 }
 .projects__swiper__button--next:hover path, .projects__swiper__button--prev:hover path {
   fill: #ff6600;
+}
+
+.newsletter {
+  max-height: 184px;
+  position: relative;
+  top: -92px;
+  z-index: 2;
+}
+.newsletter .newsletter__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 110px;
+  background-color: #ff6600;
+}
+.newsletter .newsletter__container h1 {
+  position: absolute;
+  left: 270px;
+  top: 40px;
+  bottom: 40px;
+  opacity: 0.1;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 96px;
+}
+.newsletter .newsletter__container .newsletter__container__text h2 {
+  color: #ffffff;
+  font-size: 32px;
+}
+.newsletter .newsletter__container .newsletter__container__form {
+  height: 45px;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid #ffffff;
+}
+.newsletter .newsletter__container .newsletter__container__form .email-input {
+  border: none;
+  outline: none;
+  width: 300px;
+  font-size: 14px;
+  background-color: #ff6600;
+}
+.newsletter .newsletter__container .newsletter__container__form button {
+  width: 38px;
+  height: 31px;
+  border: none;
 }
 
 .button {
