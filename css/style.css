@@ -192,7 +192,7 @@ p {
   width: 996.8px;
   height: 640px;
   opacity: 30%;
-  background: url("../../images/icons/world map.png") no-repeat center/contain;
+  background: url("../../images/reviews/world map.png") no-repeat center/contain;
   z-index: 1;
 }
 
@@ -227,6 +227,34 @@ p {
   background-color: #ffffff;
   border: 1px solid #555;
   z-index: 2;
+}
+.price-table-container .price-card:hover {
+  border: 1px solid #ff6600;
+}
+.price-table-container .price-card:hover .rectangle {
+  border-top: 50px solid #ff6600;
+}
+.price-table-container .price-card .triangle-wrapper {
+  position: relative;
+  height: 50px;
+}
+.price-table-container .price-card .rectangle {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid transparent; /* Невидимая нижняя часть */
+  border-right: 50px solid transparent; /* Правая часть */
+  border-top: 50px solid #4a4a4a; /* Верхняя видимая часть */
+}
+.price-table-container .price-card .rectangle::after {
+  content: "";
+  position: absolute;
+  top: -50px; /* Сдвиг, чтобы точно соответствовать границе */
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent; /* Уменьшенная нижняя часть */
+  border-right: 50px solid transparent;
+  border-top: 30px solid white; /* Цвет совпадает с фоном, для "сокрытия" части */
 }
 .price-table-container .price-card h2 {
   margin: 0 48px 13px;
