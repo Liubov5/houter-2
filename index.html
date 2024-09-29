@@ -1,327 +1,673 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-  </head>
-  <body>
 
-    <section class="hero">
-      <div class="hero__container container">
-        <div class="hero__info">
-          <h1 class="hero__title">Experts in construction</h1>
-          <p class="hero__description">The construction industry boasts a diverse range of experts, each playing
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero__container container">
+      <div class="hero__info">
+        <h1 class="hero__title">Experts in construction</h1>
+        <p class="hero__description">The construction industry boasts a diverse range of experts, each playing
           a crucial role in bringing a project from vision to reality. </p>
-          <button class="hero__button button">Explore More</button>
-        </div>
-        <div class="hero__human">
-          <img src="/images/hero-human.png" alt="">
-        </div>
-        <div class="hero__track">
-          <img src="/images/track.png" alt="">
-        </div>
+        <button class="hero__button button">Explore More</button>
       </div>
-    </section>
+      <div class="hero__human">
+        <img src="/images/hero-human.png" alt="">
+      </div>
+      <div class="hero__track">
+        <img src="/images/track.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- TODO: change content -->
+  <section class="services">
+    <div class="container">
+      <div class="services__wrapper">
+        <div class="services__content">
+          <div class="pre-title">Latest Services</div>
+          <h2 class="services__title">
+            The Best Services For You.
+          </h2>
+          <p class="services__description">
+            In today's world, we're bombarded with choices. From streaming services to meal kits, it can be overwhelming
+            to find the best option.
+          </p>
+          <div class="services__btn">
+            <button class="button-white">See All</button>
+          </div>
+        </div>
 
-    <section class="projects">
-      <div class="container">
-        <p class="pre-title projects__text">Our Projects</p>
-        <div class="projects__info">
-           <h2 class="projects__title">Trusted & Reliable</h2>
-           <div class="projects__swiper__arrows">
-              <div class="projects__swiper__button--prev">
-                <svg width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M49 9C49.5523 9 50 8.55228 50 8C50 7.44772 49.5523 7 49 7V9ZM0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM49 7L1 7V9L49 9V7Z" fill="#0E0E0E"/>
-                  </svg>
-                  
-              </div>
-              <div class="projects__swiper__button--next">
-                <svg width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM49.7071 8.70711C50.0976 8.31659 50.0976 7.68342 49.7071 7.2929L43.3431 0.928936C42.9526 0.538412 42.3195 0.538412 41.9289 0.928936C41.5384 1.31946 41.5384 1.95263 41.9289 2.34315L47.5858 8L41.9289 13.6569C41.5384 14.0474 41.5384 14.6805 41.9289 15.0711C42.3195 15.4616 42.9526 15.4616 43.3431 15.0711L49.7071 8.70711ZM1 9L49 9L49 7L1 7L1 9Z" fill="#0E0E0E"/>
-                  </svg>
-                  
-              </div>
-           </div>
-        </div>
-      </div>
-     
-      <div class="swiper MySwiper-projects"> 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide projects__swiper-slide">
-            <div class="projects__slide--content projects__slide--content--1">
-              <div class="projects__slide--info">
-                  <div class="projects__slide--info--tag jost-600">Contraction</div>
-                  <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide projects__swiper-slide">
-            <div class="projects__slide--content projects__slide--content--2">
-              <div class="projects__slide--info">
-                <div class="projects__slide--info--tag jost-600">Contraction</div>
-                <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide projects__swiper-slide">
-            <div class="projects__slide--content projects__slide--content--3">
-              <div class="projects__slide--info">
-                <div class="projects__slide--info--tag jost-600">Contraction</div>
-                <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide projects__swiper-slide ">
-            <div class="projects__slide--content projects__slide--content--4">
-              <div class="projects__slide--info">
-                <div class="projects__slide--info--tag jost-600">Contraction</div>
-                <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide projects__swiper-slide ">
-            <div class="projects__slide--content projects__slide--content--5">
-              <div class="projects__slide--info">
-                <div class="projects__slide--info--tag jost-600">Contraction</div>
-                <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide projects__swiper-slide">
-            <div class="projects__slide--content projects__slide--content--6">
-              <div class="projects__slide--info">
-                <div class="projects__slide--info--tag jost-600">Contraction</div>
-                <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!--Процесс работы-->
-    <section class="process container">
-      <p class="pre-title process__text">How To Process</p>
-      <h2 class="process__title">Steps in the Construction Process</h2>
-      <div class="process__tabs">
-        <div class="process__tab process__tab--active">
-            <p class="jost-600 process__tab__text">01. Planning And Design</p>
-        </div>
-        <div class="process__tab">
-          <p class="jost-600 process__tab__text">02. Permitting And Approvals</p>
-        </div>
-        <div class="process__tab">
-          <p class="jost-600 process__tab__text"> 03. Foundation Construction</p>
-        </div>
-      </div>
-      <div class="process__content">
-        <iframe class="process__content--video" src="https://www.youtube.com/embed/TC5cWh-YTKQ?si=5PYGb9jPK2CbnHbp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
+        <div class="services-swiper">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="services-swiper-media">
+                  <div class="services-swiper-media__logo">
+                    <img src="images/icons/building-icon.png" alt="building icon">
+                  </div>
+                </div>
+                <div class="services-swiper-content">
+                  <div class="services-swiper-content__title">
+                    Building Contraction
+                  </div>
+                  <div class="services-swiper-content__description">
+                    This involves various stages like
+                    planning, design
+                  </div>
 
-    <!--отзывы слайдер-->
-    <section class="swiper__reviews container">
-      <p>Our Testimonials</p>
-      <h2 class="jost-600">What our Clients Say About <br/>
-        our work.</h2>
-      <div class="swiper mySwiper-reviews">
-        <div class="swiper-wrapper swiper-wrapper__custom">
-          <div class="swiper-slide">
-            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
-            <div class="swiper__reviews--text--block">
-              <div>
-                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+                </div>
               </div>
-              <div>
-                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
-                <p class="jost-400">Architect Designer </p>
+              <div class="swiper-slide">
+                <div class="services-swiper-media">
+                  <div class="services-swiper-media__logo">
+                    <img src="images/icons/building-icon.png" alt="building icon">
+                  </div>
+                </div>
+                <div class="services-swiper-content">
+                  <div class="services-swiper-content__title">
+                    Building Contraction
+                  </div>
+                  <div class="services-swiper-content__description">
+                    This involves various stages like
+                    planning, design
+                  </div>
+
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="services-swiper-media">
+                  <div class="services-swiper-media__logo">
+                    <img src="images/icons/building-icon.png" alt="building icon">
+                  </div>
+                </div>
+                <div class="services-swiper-content">
+                  <div class="services-swiper-content__title">
+                    Building Contraction
+                  </div>
+                  <div class="services-swiper-content__description">
+                    This involves various stages like
+                    planning, design
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-swiper-media">
+                  <div class="services-swiper-media__logo">
+                    <img src="images/icons/building-icon.png" alt="building icon">
+                  </div>
+                </div>
+                <div class="services-swiper-content">
+                  <div class="services-swiper-content__title">
+                    Building Contraction
+                  </div>
+                  <div class="services-swiper-content__description">
+                    This involves various stages like
+                    planning, design
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-swiper-media">
+                  <div class="services-swiper-media__logo">
+                    <img src="images/icons/building-icon.png" alt="building icon">
+                  </div>
+                </div>
+                <div class="services-swiper-content">
+                  <div class="services-swiper-content__title">
+                    Building Contraction
+                  </div>
+                  <div class="services-swiper-content__description">
+                    This involves various stages like
+                    planning, design
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-swiper-media">
+                  <div class="services-swiper-media__logo">
+                    <img src="images/icons/building-icon.png" alt="building icon">
+                  </div>
+                </div>
+                <div class="services-swiper-content">
+                  <div class="services-swiper-content__title">
+                    Building Contraction
+                  </div>
+                  <div class="services-swiper-content__description">
+                    This involves various stages like
+                    planning, design
+                  </div>
+
+                </div>
+              </div>
+
+
             </div>
           </div>
-          <div class="swiper-slide">
-            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
-            <div class="swiper__reviews--text--block">
-              <div>
-                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
-              </div>
-              <div>
-                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
-                <p class="jost-400">Architect Designer </p>
-              </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--about-->
+  <section class="about">
+    <div class="container">
+      <div class="about__wrapper">
+        <div class="about__titles">
+          <div class="pre-title">
+            About Us
+          </div>
+          <h2 class="about__title">
+            What about our industry Performance.
+          </h2>
+        </div>
+        <div class="about__offer">
+          <p class="about__text">
+            In today's world, we're bombarded with choices. From streaming services to meal kits, it can be
+            overwhelming.
+          </p>
+          <div class="about__btns">
+            <div class="about__btn">
+              <button class="button">Read More</button>
+            </div>
+            <div class="about__description">
+              25+ Experience
             </div>
           </div>
-          <div class="swiper-slide">
-            <p class="swiper__reviews--text jost-400">Недавно я имел удовольствие наблюдать за процессом строительства нового жилого комплекса, и мои впечатления сложились достаточно положительными. </p>
-            <div class="swiper__reviews--text--block">
-              <div>
-                <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+        </div>
+      </div>
+
+
+
+
+
+      <div class="about-swiper">
+
+        <div class="swiper aboutSwiper">
+          <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide">
+
+              <div class="swiper-slide__content">
+                
+                <div class="swiper-slide__title">
+                  Our Vision
+                </div>
+
+                <ul class="swiper-slide__ul">
+                  <li class="swiper-slide__li">
+                    Integrity and ethics
+                  </li>
+                  <li class="swiper-slide__li">
+                    Commitment to quality
+                  </li>
+                  <li class="swiper-slide__li">
+                    Innovation and creativity
+                  </li>
+                </ul>
               </div>
-              <div>
-                <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
-                <p class="jost-400">Architect Designer </p>
-              </div>
+
             </div>
-          </div>
-        </div>
-        <div class="swiper__divider">
-          <img src="./images/reviews/line.png"/>
-        </div>
-        <div class="swiper-pagination swiper__review--pagination"></div>
-      </div>
-    </section>
+            <div class="swiper-slide">
 
-    <!--команда-->
-    <section class="swiper__team container">
-      <div class="swiper__team--info">
-          <p class="pre-title">Our Team Members</p>
-          <h2 class="swiper__team--info--title">Our Dedicated Team <br/> Members</h2>
-          <p class="swiper__team--info--text">In today's world, we're bombarded with choices. From streaming
-            services to meal kits, it can be overwhelming to find the
-            best option.</p>
-          <button class="button-white">See All Members</button>
-      </div>
-      
-      <div class="swiper MySwiper-team">
-        <div class="swiper-wrapper swiper-wrapper__custom">
-          <div class="swiper-slide">
-            <div class="swiper-slide--img swiper-slide--img--1"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide--img swiper-slide--img--2"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide--img swiper-slide--img--3"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide--img swiper-slide--img--4"></div>
-          </div>
-        </div>
-        <div class="swiper-pagination swiper_pagination--team">
+              <div class="swiper-slide__content">
+                
+                <div class="swiper-slide__title">
+                  Our Vision
+                </div>
 
+                <ul class="swiper-slide__ul">
+                  <li class="swiper-slide__li">
+                    Integrity and ethics
+                  </li>
+                  <li class="swiper-slide__li">
+                    Commitment to quality
+                  </li>
+                  <li class="swiper-slide__li">
+                    Innovation and creativity
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+
+              <div class="swiper-slide__content">
+                
+                <div class="swiper-slide__title">
+                  Our Vision
+                </div>
+
+                <ul class="swiper-slide__ul">
+                  <li class="swiper-slide__li">
+                    Integrity and ethics
+                  </li>
+                  <li class="swiper-slide__li">
+                    Commitment to quality
+                  </li>
+                  <li class="swiper-slide__li">
+                    Innovation and creativity
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+
+              <div class="swiper-slide__content">
+                
+                <div class="swiper-slide__title">
+                  Our Vision
+                </div>
+
+                <ul class="swiper-slide__ul">
+                  <li class="swiper-slide__li">
+                    Integrity and ethics
+                  </li>
+                  <li class="swiper-slide__li">
+                    Commitment to quality
+                  </li>
+                  <li class="swiper-slide__li">
+                    Innovation and creativity
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+             
+             
+             
+             
+             
+
+
+          </div>
         </div>
+        <div class="aboutSwiper-button-next"></div>
+        <div class="aboutSwiper-button-prev"></div>
       </div>
-    </section>
+    </div>
     
-    <section class="statistics">
-      <div class="statistics__container container">
-        <p class="statistics__caption">
-          Our Company Status
-        </p>
-          <h2 class="statistics__title">Trusted & Reliable</h2>
-          <div class="statistics__numbers numbers">
-            <div class="numbers__items">
-              <h3 class="numbers__title">110+</h3>
-              <p class="numbers__description">Completed Projects</p>
+
+  </section>
+
+  <!--statisctics-->
+  <section class="statistics">
+    <div class="statistics__container container">
+      <p class="statistics__caption pre-title">
+        Our Company Status
+      </p>
+      <h2 class="statistics__title">Trusted & Reliable</h2>
+      <div class="statistics__numbers numbers">
+        <div class="numbers__items">
+          <h3 class="numbers__title">110+</h3>
+          <p class="numbers__description">Completed Projects</p>
+        </div>
+        <div class="numbers__items">
+          <h3 class="numbers__title">280+</h3>
+          <p class="numbers__description">Team Member</p>
+        </div>
+        <div class="numbers__items">
+          <h3 class="numbers__title">100%+</h3>
+          <p class="numbers__description">Client Satisfaction</p>
+        </div>
+        <div class="numbers__items">
+          <h3 class="numbers__title">30+</h3>
+          <p class="numbers__description">Running Project</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--projects-->
+  <section class="projects">
+    <div class="container">
+      <p class="pre-title projects__text">Our Projects</p>
+      <div class="projects__info">
+         <h2 class="projects__title">Trusted & Reliable</h2>
+         <div class="projects__swiper__arrows">
+            <div class="projects__swiper__button--prev">
+              <svg width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49 9C49.5523 9 50 8.55228 50 8C50 7.44772 49.5523 7 49 7V9ZM0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM49 7L1 7V9L49 9V7Z" fill="#0E0E0E"/>
+                </svg>
+                
             </div>
-            <div class="numbers__items">
-              <h3 class="numbers__title">280+</h3>
-              <p class="numbers__description">Team Member</p>
+            <div class="projects__swiper__button--next">
+              <svg width="50" height="16" viewBox="0 0 50 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM49.7071 8.70711C50.0976 8.31659 50.0976 7.68342 49.7071 7.2929L43.3431 0.928936C42.9526 0.538412 42.3195 0.538412 41.9289 0.928936C41.5384 1.31946 41.5384 1.95263 41.9289 2.34315L47.5858 8L41.9289 13.6569C41.5384 14.0474 41.5384 14.6805 41.9289 15.0711C42.3195 15.4616 42.9526 15.4616 43.3431 15.0711L49.7071 8.70711ZM1 9L49 9L49 7L1 7L1 9Z" fill="#0E0E0E"/>
+                </svg>
+                
             </div>
-            <div class="numbers__items">
-              <h3 class="numbers__title">100%+</h3>
-              <p class="numbers__description">Client Satisfaction</p>
-            </div>
-            <div class="numbers__items">
-              <h3 class="numbers__title">30+</h3>
-              <p class="numbers__description">Running Project</p>
+         </div>
+      </div>
+    </div>
+   
+    <div class="swiper MySwiper-projects"> 
+      <div class="swiper-wrapper">
+        <div class="swiper-slide projects__swiper-slide">
+          <div class="projects__slide--content projects__slide--content--1">
+            <div class="projects__slide--info">
+                <div class="projects__slide--info--tag jost-600">Contraction</div>
+                <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
             </div>
           </div>
+        </div>
+        <div class="swiper-slide projects__swiper-slide">
+          <div class="projects__slide--content projects__slide--content--2">
+            <div class="projects__slide--info">
+              <div class="projects__slide--info--tag jost-600">Contraction</div>
+              <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide projects__swiper-slide">
+          <div class="projects__slide--content projects__slide--content--3">
+            <div class="projects__slide--info">
+              <div class="projects__slide--info--tag jost-600">Contraction</div>
+              <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide projects__swiper-slide ">
+          <div class="projects__slide--content projects__slide--content--4">
+            <div class="projects__slide--info">
+              <div class="projects__slide--info--tag jost-600">Contraction</div>
+              <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide projects__swiper-slide ">
+          <div class="projects__slide--content projects__slide--content--5">
+            <div class="projects__slide--info">
+              <div class="projects__slide--info--tag jost-600">Contraction</div>
+              <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide projects__swiper-slide">
+          <div class="projects__slide--content projects__slide--content--6">
+            <div class="projects__slide--info">
+              <div class="projects__slide--info--tag jost-600">Contraction</div>
+              <div class="projects__slide--info--title jost-600">Skyline Tower Renotaion</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="price-table">
-      <div class="price-table-container container">
-        <div class="price-table-title">
-          <h3>Our Price table</h3>
-          <h2>Solutions For Price table</h2>
+   <!--Process-->
+   <section class="process container">
+    <p class="pre-title process__text">How To Process</p>
+    <h2 class="process__title">Steps in the Construction Process</h2>
+    <div class="process__tabs">
+      <div class="process__tab process__tab--active">
+          <p class="jost-600 process__tab__text">01. Planning And Design</p>
+      </div>
+      <div class="process__tab">
+        <p class="jost-600 process__tab__text">02. Permitting And Approvals</p>
+      </div>
+      <div class="process__tab">
+        <p class="jost-600 process__tab__text"> 03. Foundation Construction</p>
+      </div>
+    </div>
+    <div class="process__content">
+      <iframe class="process__content--video" src="https://www.youtube.com/embed/TC5cWh-YTKQ?si=5PYGb9jPK2CbnHbp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!--отзывы-->
+  <section class="swiper__reviews container">
+    <p class="pre-title">Our Testimonials</p>
+    <h2 class="jost-600">What our Clients Say About <br/>
+      our work.</h2>
+    <div class="swiper mySwiper-reviews">
+      <div class="swiper-wrapper swiper-wrapper__custom">
+        <div class="swiper-slide">
+          <p class="swiper__reviews--text jost-400">Whether it’s a small house or a towering skyscraper, the foundation is key to safety and durability. Safety gear like helmets and gloves is essential on-site.</p>
+          <div class="swiper__reviews--text--block">
+            <div>
+              <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+            </div>
+            <div>
+              <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+              <p class="jost-400">Architect Designer </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <p class="swiper__reviews--text jost-400">Today’s construction industry relies on advanced technology to make buildings safer and more efficient. Prefabricated materials, 3D modeling, and automated machinery have sped up the building process.</p>
+          <div class="swiper__reviews--text--block">
+            <div>
+              <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+            </div>
+            <div>
+              <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+              <p class="jost-400">Architect Designer </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <p class="swiper__reviews--text jost-400">Safety is the top priority on any construction site. Workers must wear protective gear like helmets, gloves, and harnesses to prevent injuries.</p>
+          <div class="swiper__reviews--text--block">
+            <div>
+              <img style="width: 86px;" src="images/reviews/quote.png" alt="">
+            </div>
+            <div>
+              <h3 class="swiper__reviews--text">Brooklyn Simmons</h3>
+              <p class="jost-400">Architect Designer </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper__divider">
+        <img src="./images/reviews/line.png"/>
+      </div>
+      <div class="swiper-pagination swiper__review--pagination"></div>
+    </div>
+  </section>
+
+   <!--Team-->
+   <section class="swiper__team container">
+    <div class="swiper__team--info">
+        <p class="pre-title">Our Team Members</p>
+        <h2 class="swiper__team--info--title">Our Dedicated Team <br/> Members</h2>
+        <p class="swiper__team--info--text">In today's world, we're bombarded with choices. From streaming
+          services to meal kits, it can be overwhelming to find the
+          best option.</p>
+        <button class="button-white">See All Members</button>
+    </div>
+    
+    <div class="swiper MySwiper-team">
+      <div class="swiper-wrapper swiper-wrapper__custom">
+        <div class="swiper-slide">
+          <div class="swiper-slide--img swiper-slide--img--1"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide--img swiper-slide--img--2"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide--img swiper-slide--img--3"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide--img swiper-slide--img--4"></div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper_pagination--team">
+
+      </div>
+    </div>
+  </section>
+
+  <!--Price-->
+  <section class="price-table">
+    <div class="price-table-container container">
+      <div class="price-table-title">
+        <h3>
+          <hr>Our Price table
+        </h3>
+        <h2>Solutions For Price table</h2>
+      </div>
+
+      <div class="price-cards">
+        <div class="price-card">
+
+          <div class="triangle-wrapper">
+            <div class="rectangle"></div>
+          </div>
+
+          <h2>$19.99 <span>/M</span></h2>
+          <div class="star-container">
+            <img src="/images/icons/Star.svg" alt="star">
+            <h3>Basic</h3>
+          </div>
+          <hr>
+          <div class="price-card__description">
+            <ul>
+              <li>24/7 Free Hotline Service</li>
+              <li>Chat Support</li>
+              <li>5 Months After Delivery Support</li>
+              <li>Support with 8 Engineers</li>
+              <li><span>Team Management</span></li>
+              <li><span>Free Digital Marketing & Analysis</span></li>
+            </ul>
+          </div>
+          <button class="button-white">Start Free Trial</button>
         </div>
 
-        <div class="price-cards">
-          <div class="price-card">
-            <img src="#" alt="rectangle">
-            <h2>$19.99<span> /M</span></h2>
-            <div class="star-container">
-              <img src="#" alt="star">
-              <h3>Basic</h3>
-              <hr>
-                <div class="price-card__descritpion">
-                  <ul>
-                    <li>24/7 Free Hotline Servic</li>
-                    <li>Chat Support</li>
-                    <li>5 Months After Delivery Support</li>
-                    <li>Support with 8 Engineers</li>
-                    <li class="inaccessible-options">Team Management</li>
-                    <li class="inaccessible-options">Free Digital Marketing & Analysis</li>
-                  </ul>
-                </div>
-                <button class="button">
-                  <p>Start Free Trial</p>
-                  <img src="" alt="arrow">
-                </button>
+        <div class="price-card">
+          <div class="special-card">
+            <div class="triangle-wrapper">
+              <div class="rectangle"></div>
             </div>
-          </div>
-
-          <div class="price-card">
-            <img src="#" alt="rectangle">
             <div class="special-div">Special</div>
-            <h2>$29.99<span> /M</span></h2>
-            <div class="star-container">
-              <img src="#" alt="star">
-              <h3>Standart</h3>
-              <hr>
-                <div class="price-card__descritpion">
-                  <ul>
-                    <li>24/7 Free Hotline Servic</li>
-                    <li>Chat Support</li>
-                    <li>5 Months After Delivery Support</li>
-                    <li>Support with 8 Engineers</li>
-                    <li>Team Management</li>
-                    <li>Free Digital Marketing & Analysis</li>
-                  </ul>
-                </div>
-                <button class="button">
-                  <p>Start Free Trial</p>
-                  <img src="" alt="arrow">
-                </button>
-            </div>
           </div>
-
-          <div class="price-card">
-            <img src="#" alt="rectangle">
-            <h2>$39.99<span> /M</span></h2>
-            <div class="star-container">
-              <img src="#" alt="star">
-              <h3>Premium</h3>
-              <hr>
-                <div class="price-card__descritpion">
-                  <ul>
-                    <li>24/7 Free Hotline Servic</li>
-                    <li>Chat Support</li>
-                    <li>5 Months After Delivery Support</li>
-                    <li>Support with 8 Engineers</li>
-                    <li>Team Management</li>
-                    <li class="inaccessible-options">Free Digital Marketing & Analysis</li>
-                  </ul>
-                </div>
-                <button class="button">
-                  <p>Start Free Trial</p>
-                  <img src="" alt="arrow">
-                </button>
-            </div>
+          <h2>$29.99 <span>/M</span></h2>
+          <div class="star-container">
+            <img src="/images/icons/Star.svg" alt="star">
+            <h3>Standart</h3>
           </div>
+          <hr>
+          <div class="price-card__description">
+            <ul>
+              <li>24/7 Free Hotline Servic</li>
+              <li>Chat Support</li>
+              <li>5 Months After Delivery Support</li>
+              <li>Support with 8 Engineers</li>
+              <li>Team Management</li>
+              <li>Free Digital Marketing & Analysis</li>
+            </ul>
+          </div>
+          <button class="button-white">Start Free Trial</button>
+        </div>
 
+        <div class="price-card">
+          <div class="triangle-wrapper">
+            <div class="rectangle"></div>
+          </div>
+          <h2>$39.99 <span>/M</span></h2>
+          <div class="star-container">
+            <img src="/images/icons/Star.svg" alt="star">
+            <h3>Premium</h3>
+          </div>
+          <hr>
+          <div class="price-card__description">
+            <ul>
+              <li>24/7 Free Hotline Service</li>
+              <li>Chat Support</li>
+              <li>5 Months After Delivery Support</li>
+              <li>Support with 8 Engineers</li>
+              <li>Team Management</li>
+              <li><span>Free Digital Marketing & Analysis</span></li>
+            </ul>
+          </div>
+          <button class="button-white">Start Free Trial</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script type="module" src="/main.js"></script>
+  <section class="insights">
+    <div class="insights__container container">
+      <p class="insights__caption pre-title">Our blog</p>
+      <h2 class="insights__title">Latest Insights and Updates</h2>
+      <div class="insights__modals modals">
+        <div class="modals__main main">
+          <div class="main__notes-container">
+            <div class="main__captions-wrapper captions-wrapper">
+              <p class="main__captions pre-title1">By Admin</p>
+              <p class="main__captions pre-title2">Building</p>
+            </div>
+            <h3 class="main__title">Stay up-to-date with the latest happenings.</h3>
+            <p class="main__description">Stay informed with our regular updates on significant events,
+              regulatory changes, and market trends. We cover a wide
+              range of topics, from new technological.</p>
+            <a href="/" class="modals__more">Read More</a>
+          </div>
+          <div class="main__image">
+            <img src="/images/builders/1.jpg" alt="Builder in headphones">
+          </div>
+        </div>
+        <div class="modals__item-wrapper">
+          <div class="modals__item">
+            <img src="/images/builders/2.jpg" alt="The builder is busy">
+            <div class="modals__captions-wrapper captions-wrapper">
+              <p class="modals__captions pre-title1">By Admin</p>
+              <p class="modals__captions pre-title2">Building</p>
+            </div>
+            <h3 class="modals__title">Practical advice and building step-by-step.</h3>
+            <a href="/" class="modals__more">Read More</a>
+          </div>
+          <div class="modals__item">
+            <div class="modals__image-announcement">
+              <img src="/images/builders/3.jpg" alt="The builder pours cement">
+            </div>
+            <div class="modals__captions-wrapper captions-wrapper">
+              <p class="modals__captions pre-title1">By Admin</p>
+              <p class="modals__captions pre-title2">Building</p>
+            </div>
+            <h3 class="modals__title">Insights perspective industry
+              from our team.</h3>
+            <a href="/" class="modals__more">Read More</a>
+          </div>
+          <div class="modals__item">
+            <img src="/images/builders/4.jpg" alt="The builders are discussing something">
+            <div class="modals__captions-wrapper captions-wrapper">
+              <p class="modals__captions pre-title1">By Admin</p>
+              <p class="modals__captions pre-title2">Building</p>
+            </div>
+            <h3 class="modals__title">most successful projects best
+              building case studies.</h3>
+            <a href="/" class="modals__more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <section class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.1628668151398!2d37.54747115750678!3d55.85984062123201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5379877ebfd71%3A0xb5030e9274a4c8a1!2z0JzQvtGC0L7RgdC10YDQstC40YEgIkR1c3QgUm9hZHMi!5e0!3m2!1sru!2sru!4v1727542777678!5m2!1sru!2sru" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-  </body>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/main.js"></script>
+
+</body>
 </html>
